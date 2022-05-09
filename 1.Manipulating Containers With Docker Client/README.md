@@ -1,7 +1,8 @@
 - `docker run <image-name>`
+- ``docker run -d <image-name>`: run container in background and print container ID
 - `docker ps`: list containers that are running
 - `docker ps --all`: list all containers that you have ran
-- `docker run` = `docker create <container-name>`(gives the id) + `docker start <container-id>`
+- `docker run <image-name>` = `docker create <container-name>`(gives the id) + `docker start <container-id>`
 - `docker start` doesn't give you the output `docker start -a`: show the output in the terminal
 - command of a container cannot be overwritten once being created
 - `docker system prune`: remove containers
@@ -19,10 +20,11 @@
 
 ### `docker exec -it <container-id> sh`
 
+- `docker exec` will start a second process in a **running** container
 - `sh` is just a command processor, just like `bash`, `powershell`, `zsh` etc
 - Type `^D` or `exit` to exit
 
-### `docker run -it <image> sh` (alternative)
+### `docker run -it <image-name> sh` (alternative)
 
 - This command will run the default command
 - Con: You are not able to run any other process

@@ -1,0 +1,9 @@
+version: "3" # specify the version of docker-compose we gona use
+services:
+  redis-server:
+    image: "redis"
+  node-app:
+    restart: on-failure
+    build: .
+    ports:
+      - "4001:8081"

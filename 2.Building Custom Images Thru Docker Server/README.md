@@ -28,3 +28,4 @@
 ## Tagging your container `docker build -t <tag-name> .`
 
 - Tag Name Convention: `<docker-id>/<project-name>:<version>` (ex: jasonli/redis:latest)
+- If no version specified after `:`, `latest` is appended by default
