@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: database-persistent-volume-claim
+spec:
+  accessModes:
+    - ReadWriteOnce
+    # Three Types:
+    # 1. ReadWriteOnce: Can be used by a single node
+    # 2. ReadOnlyMany: Multiple nodes can read from this
+    # 3. ReadWriteMany: Can be read and written to by many nodes
+  resources:
+    requests:
+      storage: 2Gi # 2GB
+      # right now we are relying upon default storage option
+      # when deploying to cloud we might need to specify which type of storage we want

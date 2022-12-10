@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: client-node-port
+spec:
+  type: NodePort
+  ports:
+    - port: 3050 # another pod/container inside our app can use this port to access this object
+      targetPort: 3000 # send incoming traffic to this port
+      nodePort: 31515 # (random 30000-32767 if not defined), we can access the target node from, in this case, localhost:31515
+  selector:
+    # select any object that has this value-key pair as label
+    component: web

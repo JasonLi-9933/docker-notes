@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: client-cluster-ip-service
+spec:
+  type: ClusterIP
+  selector:
+    component: web
+  ports:
+    - port: 3000 # Internal cluster service port for container and listens for incoming request from the nodeport and forwards to targetPort
+      targetPort: 3000 # Receives the request from port and forwards to container pod(port) where it's listening.

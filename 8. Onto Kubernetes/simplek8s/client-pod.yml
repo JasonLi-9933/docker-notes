@@ -1,0 +1,14 @@
+apiVersion: v1 # defines a different set of 'objects' we can use
+kind: Pod # indicate the object type
+metadata:
+  name: client-pod
+  labels:
+    # labels can be any thing, ex: item: frontend,
+    # and the selector need to match that
+    component: web
+spec:
+  containers:
+    - name: client
+      image: stephengrider/multi-worker
+      ports:
+        - containerPort: 3000
