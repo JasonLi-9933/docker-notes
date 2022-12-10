@@ -1,2 +1,8 @@
 - [Manipulating Containers With Docker Client](./1.Manipulating%20Containers%20With%20Docker%20Client/README.md)
 - [Building Custom Images Thru Docker Server](./2.Building%20Custom%20Images%20Thru%20Docker%20Server/README.md)
+- [Make Project with Docker (NodeJS)](<./3.Make%20Project%20with%20Docker%20(NodeJS)/README.md>)
+- [Docker Compose with multiple local containers](./4.Docker%20Compose%20with%20Multiple%20Local%20Containers/README.md)
+- [Creating a Production-Grade Workflow](./5.%20Creating%20a%20Production-Grade%20Workflow/README.md)
+- [Continuous Integration and Deployment with AWS](./6.%20Continuous%20Integration%20and%20Deployment%20with%20AWS/README.md))
+- [Building a Multi-Container Application](./7.%20Building%20a%20Multi-Container%20Application/)
+- [Onto Kubernetes](./8.%20Onto%20Kubernetes/README.md)
